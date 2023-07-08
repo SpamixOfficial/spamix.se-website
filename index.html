@@ -1,18 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spamix</title>
-</head>
-<body>
-    <div>
-        <p style="text-align: center; font-size: medium;">IMPORTANT; DOWNTIME FROM 15:00 UTC+2</p>
-        <hr>
-        
+<html>
+  <head>
+    <title>Under maintenance</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap);
+      @keyframes a {
+        to {
+          background-position: 0-200%;
+        }
+      }
+      @keyframes b {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+      }
+      .a {
+        background: linear-gradient(
+            red 0,
+            #ff9a00 10%,
+            #d0de21 20%,
+            #4fdc4a 30%,
+            #3fdad8 40%,
+            #2fc9e2 50%,
+            #1c7fee 60%,
+            #5f15f2 70%,
+            #ba0cf8 80%,
+            #fb07d9 90%,
+            red 100%
+          )
+          0 0/100% 200%;
+        animation: a 2s linear infinite;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        align-items: center;
+      }
+      .b,
+      .b span {
+        position: relative;
+      }
+      .b span {
+        display: inline-block;
+        animation: b 2s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+        mix-blend-mode: difference;
+      }
+    </style>
+  </head>
+  <body class="a">
+    <div class="b">
+      <span style="--i: 1">M</span><span style="--i: 2">a</span
+      ><span style="--i: 3">i</span><span style="--i: 4">n</span
+      ><span style="--i: 5">t</span><span style="--i: 6">e</span
+      ><span style="--i: 7">n</span><span style="--i: 8">a</span
+      ><span style="--i: 9">n</span><span style="--i: 10">c</span
+      ><span style="--i: 11">e</span>
     </div>
-    <h1>Hello, World!</h1>
-    
-</body>
+  </body>
 </html>
+<script>
+/*    var strindex = 1
+    var spanstr = "Website under maintenance\nCome Back Later!"
+    var rbspan = document.createElement('span').setAttribute("style",`--i: ${strindex}`)
+    rbspan.textContent = "C" */
+</script>
