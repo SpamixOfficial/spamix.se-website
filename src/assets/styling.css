@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "BigBlueTerm437 Nerd Font";
+    src: url("fonts/BigBlueTerminal/BigBlueTerm437NerdFont-Regular.ttf");
+}
+
+html {
+    background-image: url("images/bkg2.png");
+}
+
+.container1 {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    border-left: 10px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-style: solid;
+    text-align: center;
+}
+
+.center_vert {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Text adn other objects */
+h1 {
+    font-family: "BigBlueTerm437 Nerd Font";
+}
+p {
+    font-family: "BigBlueTerm437 Nerd Font";
+    color: red;
+}
